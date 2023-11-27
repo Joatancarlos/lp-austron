@@ -1,7 +1,9 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
+import { dataOffers } from "./lib/dataOffers"
 import Logo from "./ui/logo";
 import NavLinks from "./ui/nav-links";
+import Offer from "./ui/offer";
 // import './globals.css'
 
 export default function Home() {
@@ -35,6 +37,21 @@ export default function Home() {
             width={500}
             height={500}
           />
+        </section>
+        <section>
+          <ul className="flex flex-wrap justify-between my-8">
+            { dataOffers.map(({ image, title, text }) => {
+              return (
+                <li key={title}>
+                  <Offer
+                    image={image}
+                    title={title}
+                    text={text}
+                  />
+                </li>
+              )
+            }) }
+          </ul>
         </section>
       </main>
     </div>
