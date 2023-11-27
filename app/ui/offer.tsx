@@ -15,6 +15,7 @@ export default function Offer({ image, title, text }: OfferProps) {
         alt={title}
         width={100}
         height={100}
+        // className="bg-[#9B2FE9] rounded"
       />
       <h3 className="font-semibold text-2xl">{title}</h3>
       <p className="text-center">{text}</p>

@@ -32,10 +32,11 @@ export default function Home() {
             >Alcance o Sucesso!</Button>
           </div>
           <Image
-            src=""
+            src="/images/3d-rendered-ecommerce.png"
             alt="Ilustrações de um e-commerce"
-            width={500}
+            width={750}
             height={500}
+            className="mt-[-95px]"
           />
         </section>
         <section>
@@ -52,6 +53,39 @@ export default function Home() {
               )
             }) }
           </ul>
+        </section>
+        <section className="flex justify-around my-20">
+          <div className="w-96">
+            <h2 className="font-semibold text-4xl capitalize mb-3">
+              sua oportunidade para o sucesso;
+            </h2>
+            <p className="text-center">
+              Criamos a ponte definitiva entre vendedores visionários e fornecedores de elite. Austron é mais que uma plataforma - é o caminho acelerado para lucros extraordinários e conquista de mercado. Entre para o jogo dos grandes. Austron é onde ambição encontra oportunidade.
+            </p>
+          </div>
+          <Image
+            src=""
+            alt="Ilustração de um foguete decolando"
+            width={300}
+            height={350}
+          />
+        </section>
+        <section className="flex justify-around my-20">
+          <Image 
+            src="/images/5224471.png"
+            alt="Ilustração de uma pessoa com um notebook"
+            width={400}
+            height={400}
+            className="bg-[url(/images/blob1.svg)] bg-[length:80%] bg-center bg-no-repeat "
+          />
+          <div className="w-64">
+            <span className="text-[#9B2FE9] font-bold text-3xl">
+              {"// transforme"}
+              </span>
+            <p className="font-bold text-6xl tracking-tighter leading-[4.5rem] capitalize mb-4">
+              Clique em Conquistas.
+            </p>
+          </div>
         </section>
       </main>
     </div>

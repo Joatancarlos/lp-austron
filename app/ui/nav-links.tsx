@@ -5,16 +5,16 @@ export default function NavLinks() {
     <nav>
       <ul className="flex w-80 justify-between">
         <li>
-          <a href="">Início</a>
+          <a href="/">Início</a>
         </li>
         <li>
-          <a href="">Sobre</a>
+          <a href="/">Sobre</a>
         </li>
         <li>
-          <a href="">Business</a>
+          <a href="/">Business</a>
         </li>
         <li>
-          <a href="">Contato</a>
+          <a href="/">Contato</a>
         </li>
       </ul>
     </nav>

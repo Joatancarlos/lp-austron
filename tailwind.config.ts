@@ -14,6 +14,15 @@ const config: Config = {
       lineHeight: {
         'extra-loose': '4.5rem',
       },
+      margin: {
+        'negative': '-95px',
+      },
+      backgroundImage: {
+        'blob1': "url(/images/blob1.svg)",
+      },
+      backgroundSize: {
+        '80%': '80%',
+      },
     },
   },
   plugins: [],
