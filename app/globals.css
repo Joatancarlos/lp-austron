@@ -20,6 +20,10 @@ body {
   background-color: rgb(255, 255, 255);
 } 
 
+.sombras {
+  box-shadow: 0 0 0 0.5rem rgba(0, 0, 0, 0.15);
+}
+
 /* .blob1-bg {
   background: url("/images/blob2.svg") no-repeat;
   background-size: 30%;

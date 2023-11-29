@@ -15,7 +15,9 @@ const config: Config = {
         'extra-loose': '4.5rem',
       },
       margin: {
-        'negative': '-95px',
+        'negative': '-60px',
+        '-2': '-2px',
+        'top-negative': '-60px',
       },
       backgroundImage: {
         'blob1': "url(/images/blob1.svg)",

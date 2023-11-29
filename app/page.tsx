@@ -1,9 +1,11 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
-import { dataOffers } from "./lib/dataOffers"
+import { dataOffers } from "./lib/dataOffers";
+import { dataWork } from "./lib/dataWork";
 import Logo from "./ui/logo";
 import NavLinks from "./ui/nav-links";
 import Offer from "./ui/offer";
+import Link from "next/link";
 // import './globals.css'
 
 export default function Home() {
@@ -18,7 +20,8 @@ export default function Home() {
         </div>
       </header>
       <main className="px-11">
-        <section className="flex justify-between my-8">
+        {/* Apresentação */}
+        <section className="flex justify-between my-20">
           <div className="w-[30rem]">
             <h1
               className="font-bold text-6xl tracking-tighter leading-[4.5rem] capitalize mb-4">
@@ -32,15 +35,16 @@ export default function Home() {
             >Alcance o Sucesso!</Button>
           </div>
           <Image
-            src="/images/3d-rendered-ecommerce.png"
+            src="/images/3d-rendered-ecommerce.webp"
             alt="Ilustrações de um e-commerce"
-            width={750}
+            width={700}
             height={500}
-            className="mt-[-95px]"
+            className="mt-[-60px]"
           />
         </section>
+        {/* O que oferece */}
         <section>
-          <ul className="flex flex-wrap justify-between my-8">
+          <ul className="flex flex-wrap justify-between my-20">
             { dataOffers.map(({ image, title, text }) => {
               return (
                 <li key={title}>
@@ -48,13 +52,16 @@ export default function Home() {
                     image={image}
                     title={title}
                     text={text}
+                    heightImg={100}
+                    widthImg={100}
                   />
                 </li>
               )
             }) }
           </ul>
         </section>
-        <section className="flex justify-around my-20">
+        {/* Oportunidade para o sucesso */}
+        <section className="flex justify-around my-20 items-center">
           <div className="w-96">
             <h2 className="font-semibold text-4xl capitalize mb-3">
               sua oportunidade para o sucesso;
@@ -64,18 +71,19 @@ export default function Home() {
             </p>
           </div>
           <Image
-            src=""
+            src="/images/foguete.png"
             alt="Ilustração de um foguete decolando"
             width={300}
             height={350}
           />
         </section>
-        <section className="flex justify-around my-20">
+        {/* Transforme */}
+        <section className="flex justify-around items-center">
           <Image 
             src="/images/5224471.png"
             alt="Ilustração de uma pessoa com um notebook"
-            width={400}
-            height={400}
+            width={600}
+            height={600}
             className="bg-[url(/images/blob1.svg)] bg-[length:80%] bg-center bg-no-repeat "
           />
           <div className="w-64">
@@ -87,6 +95,74 @@ export default function Home() {
             </p>
           </div>
         </section>
+        {/* Como funciona */}
+        <section className="">
+          <div className="text-center my-20">
+            <span className="text-[#9B2FE9] font-normal text-3xl block mb-8">
+              {`"E como funciona?"`}
+            </span>
+            <h2 className="font-bold text-6xl tracking-tighter mb-4">
+              É tudo muito simples;
+            </h2>
+          </div>
+          <div className="mt-48">
+            <div className="relative">
+              <div className="absolute top-[-60px] w-full px-10">
+                <ul className="flex flex-wrap justify-between text-white">
+                  { dataWork.map(({ image, title, text }) => {
+                    return (
+                      <li key={title}>
+                        <Offer
+                          image={image}
+                          title={title}
+                          text={text}
+                          widthImg={210}
+                          heightImg={210}
+                        />
+                      </li>
+                    )
+                  }) }
+                </ul>
+              </div>
+              <Image 
+                src="/images/wave.svg"
+                alt="figura com efeito de onda na cor lilás"
+                width={1200}
+                height={300}
+              />
+            </div>
+            <div className="bg-[#9B2FE9] pt-60 pb-10 text-white">
+              <div className="flex flex-col items-center">
+                <Image
+                  src="/images/money1.png"
+                  alt="Ilustração de duas cédulas de dinheiro"
+                  width={150}
+                  height={150}
+                />
+                <h2 className="font-bold text-4xl tracking-tighter my-7">
+                  Abra as portas do seu futuro
+                </h2>
+                <div className="flex justify-between w-2/3 m-auto">
+                  <p className="w-1/3">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sit magnam omnis inventore perferendis amet eum dicta praesentium impedit doloremque maxime minus facere excepturi vitae molestias ad optio, dignissimos fugit!
+                  </p>
+                  <p className="text-end w-1/3">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quasi dolorem corporis, magnam voluptatibus vero, cum, reiciendis earum labore eaque facere porro atque illum minus. Beatae quae consequatur deleniti necessitatibus?
+                  </p>
+                </div>
+                <Button
+                  className="rounded-full bg-[#f51357] w-96 py-3 my-8 text-white font-bold"
+                >
+                  Alcance o Sucesso!
+                </Button>
+                <Link href="/" className="capitalize underline underline-offset-2">
+                  ou entre em contato conosco
+                </Link>
+              </div>
+            </div>
+          </div>
+        </section>
+        
       </main>
     </div>
   )
