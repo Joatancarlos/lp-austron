@@ -18,7 +18,7 @@ export default function RootLayout({
       <body className={openSans.className}>
         {children}
         <footer className="text-center p-2">
-          Copyrigth &#169; 2023 <Link className="font-bold" href="/">Austron</Link>
+          Copyrigth &#169; 2023 <Link className="font-bold hover:underline" href="/">Austron</Link>
         </footer>
       </body>
     </html>

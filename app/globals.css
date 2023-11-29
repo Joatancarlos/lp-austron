@@ -32,6 +32,19 @@ body {
   color: white;
 }
 
+.animationRocket {
+  animation: rocket 1s ease-in-out infinite alternate;
+}
+
+@keyframes rocket {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+
 /* .blob1-bg {
   background: url("/images/blob2.svg") no-repeat;
   background-size: 30%;

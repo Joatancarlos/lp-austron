@@ -7,7 +7,8 @@ import NavLinks from "./ui/nav-links";
 import Offer from "./ui/offer";
 import Link from "next/link";
 import HowWork from "./ui/howWork";
-// import './globals.css'
+import Rocket from "./ui/rocket";
+
 
 export default function Home() {
   return (
@@ -75,12 +76,7 @@ export default function Home() {
               Criamos a ponte definitiva entre vendedores visionários e fornecedores de elite. Austron é mais que uma plataforma - é o caminho acelerado para lucros extraordinários e conquista de mercado. Entre para o jogo dos grandes. Austron é onde ambição encontra oportunidade.
             </p>
           </div>
-          <Image
-            src="/images/foguete.png"
-            alt="Ilustração de um foguete decolando"
-            width={300}
-            height={350}
-          />
+          <Rocket />
         </section>
         {/* Transforme */}
         <section className="flex justify-around items-center">
@@ -175,7 +171,7 @@ export default function Home() {
                 >
                   Alcance o Sucesso!
                 </Button>
-                <Link href="/" className="capitalize underline underline-offset-2">
+                <Link href="/" className="capitalize underline underline-offset-2 hover:no-underline ">
                   ou entre em contato conosco
                 </Link>
               </div>
