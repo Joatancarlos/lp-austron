@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function Logo() {
   return (
-    <div>
+    <div className="flex lg:flex-1">
       <Link href="/">
         <Image
           src="/images/logo-nexus-title.svg"

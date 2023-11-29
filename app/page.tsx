@@ -13,17 +13,9 @@ import Rocket from "./ui/rocket";
 export default function Home() {
   return (
     <div className="max-w-screen-xl m-auto blob1-bg">
-      <header className="flex justify-between items-center px-11">
-        <Logo />
+      <header className="">
         <NavLinks />
-        <div className="flex justify-between w-52">
-          <Button className="font-semibold hover:bg-[#f51357] hover:shadow-xl px-4 py-2 rounded-full transition-all duration-200">
-            Registre-se
-          </Button>
-          <Button className="font-semibold bg-white px-4 py-2 rounded-full transition-all shadow-xl">
-            Entrar
-          </Button>
-        </div>
+        
       </header>
       <main className="px-11">
         {/* Apresentação */}
