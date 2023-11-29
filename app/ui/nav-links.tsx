@@ -46,12 +46,12 @@ export default function NavLinks() {
           ))}
         </ul>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-            <Button className="font-semibold hover:bg-[#f51357] hover:shadow-xl px-4 py-2 rounded-full transition-all duration-200">
+            <Link href="#" className="font-semibold hover:bg-[#f51357] hover:shadow-xl px-4 py-2 rounded-full transition-all duration-200">
               Registre-se
-            </Button>
-            <Button className="font-semibold bg-white px-4 py-2 rounded-full transition-all shadow-xl">
+            </Link>
+            <Link href="#" className="font-semibold bg-white px-4 py-2 rounded-full transition-all shadow-xl">
               Entrar
-            </Button>
+            </Link>
           </div>
         {/* Desktop */}
       </nav>
@@ -68,9 +68,38 @@ export default function NavLinks() {
               onClick={() => setMobileMenuOpen(false)}
             >
               <span className="sr-only">Close menu</span>
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <XMarkIcon className="h-6 w-6" aria-hidden="true" color='white' />
             </button>
           </div>
+          <div className="mt-6 flow-root">
+              <div className="-my-6 divide-y divide-gray-500/10">
+                <div className="space-y-2 py-6">
+                  {navigation.map((item) => (
+                    <Link
+                      key={item.name}
+                      href={item.href}
+                      className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    >
+                      {item.name}
+                    </Link>
+                  ))}
+                </div>
+                <div className="py-6">
+                  <Link
+                    href="#"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    Registre-se
+                  </Link>
+                  <Link
+                    href="#"
+                    className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                  >
+                    Entrar
+                  </Link>
+                </div>
+              </div>
+            </div>
           {/* Falta o map dos links */}
         </Dialog.Panel>
       </Dialog>

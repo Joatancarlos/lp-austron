@@ -21,11 +21,14 @@ const config: Config = {
         'bottom-negative': '-40px',
       },
       backgroundImage: {
-        'blob1': "url(/images/blob1.svg)",
+        'blob1': "url(/images/blob2.svg)",
       },
       backgroundSize: {
-        '80%': '80%',
+        '55rem': '55rem',
       },
+      backgroundPosition: {
+        'right-top': '-155px -10%',
+      }
     },
   },
   plugins: [],

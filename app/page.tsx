@@ -12,10 +12,9 @@ import Rocket from "./ui/rocket";
 
 export default function Home() {
   return (
-    <div className="max-w-screen-xl m-auto blob1-bg">
+    <div className="max-w-screen-xl m-auto bg-[url(/images/blob2.svg)] bg-no-repeat bg-[-155px_-10%] bg-[length:55rem] lg:bg-none">
       <header className="">
         <NavLinks />
-        
       </header>
       <main className="px-11">
         {/* Apresentação */}
