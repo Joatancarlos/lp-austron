@@ -1,7 +1,7 @@
-import Image from 'next/image'
-import React from 'react'
+import Image from 'next/image';
+import React from 'react';
 
-interface OfferProps {
+interface Props {
   image: string
   title: string
   text: string
@@ -17,7 +17,7 @@ export default function Offer({
     colorTitle,
     widthImg,
     heightImg
-  }: OfferProps) {
+  }: Props) {
   return (
     <div className=" flex flex-col justify-center items-center w-72">
       <Image
@@ -25,7 +25,7 @@ export default function Offer({
         alt={title}
         width={widthImg}
         height={heightImg}
-        // className="bg-[#9B2FE9] rounded"
+        className="bg-[#9B2FE9] rounded-3xl colorImage p-4"
       />
       <h3 className={`font-semibold my-5 text-2xl ${colorTitle}`}>{title}</h3>
       <p className="text-center">{text}</p>

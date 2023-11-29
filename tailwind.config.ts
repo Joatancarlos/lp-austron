@@ -18,6 +18,7 @@ const config: Config = {
         'negative': '-60px',
         '-2': '-2px',
         'top-negative': '-60px',
+        'bottom-negative': '-40px',
       },
       backgroundImage: {
         'blob1': "url(/images/blob1.svg)",

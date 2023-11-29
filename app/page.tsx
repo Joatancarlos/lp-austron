@@ -1,11 +1,12 @@
 import Image from "next/image";
 import { Button } from "./ui/button";
 import { dataOffers } from "./lib/dataOffers";
-import { dataWork } from "./lib/dataWork";
+import { dataHowWork } from "./lib/dataHowWork";
 import Logo from "./ui/logo";
 import NavLinks from "./ui/nav-links";
 import Offer from "./ui/offer";
 import Link from "next/link";
+import HowWork from "./ui/howWork";
 // import './globals.css'
 
 export default function Home() {
@@ -14,9 +15,13 @@ export default function Home() {
       <header className="flex justify-between items-center px-11">
         <Logo />
         <NavLinks />
-        <div className="flex justify-between w-40">
-          <Button>Registre-se</Button>
-          <Button>Entrar</Button>
+        <div className="flex justify-between w-52">
+          <Button className="font-semibold hover:bg-[#f51357] hover:shadow-xl px-4 py-2 rounded-full transition-all duration-200">
+            Registre-se
+          </Button>
+          <Button className="font-semibold bg-white px-4 py-2 rounded-full transition-all shadow-xl">
+            Entrar
+          </Button>
         </div>
       </header>
       <main className="px-11">
@@ -31,7 +36,7 @@ export default function Home() {
               Seu negócio, suas regras. Venda online e viva a vida dos seus sonhos. Comece agora com a Austron.
             </p>
             <Button
-              className="rounded-full bg-[#f51357] px-6 py-3 text-white font-bold"
+              className="rounded-full bg-[#f51357] px-6 py-3 text-white font-bold shadow-xl transition-all hover:bg-[#da0b49] duration-200"
             >Alcance o Sucesso!</Button>
           </div>
           <Image
@@ -44,7 +49,7 @@ export default function Home() {
         </section>
         {/* O que oferece */}
         <section>
-          <ul className="flex flex-wrap justify-between my-20">
+          <ul className="flex flex-wrap justify-between my-40">
             { dataOffers.map(({ image, title, text }) => {
               return (
                 <li key={title}>
@@ -61,7 +66,7 @@ export default function Home() {
           </ul>
         </section>
         {/* Oportunidade para o sucesso */}
-        <section className="flex justify-around my-20 items-center">
+        <section className="flex justify-around mb-20 items-center">
           <div className="w-96">
             <h2 className="font-semibold text-4xl capitalize mb-3">
               sua oportunidade para o sucesso;
@@ -109,19 +114,33 @@ export default function Home() {
             <div className="relative">
               <div className="absolute top-[-60px] w-full px-10">
                 <ul className="flex flex-wrap justify-between text-white">
-                  { dataWork.map(({ image, title, text }) => {
-                    return (
-                      <li key={title}>
-                        <Offer
-                          image={image}
-                          title={title}
-                          text={text}
-                          widthImg={210}
-                          heightImg={210}
-                        />
-                      </li>
-                    )
-                  }) }
+                  <li>
+                    <HowWork
+                      image="/images/box.png"
+                      title="Você vende..."
+                      text="Escolha os produtos e compartilhe-os online. Seja nas redes sociais, campanha de marketing ou aplicativos, você tem total liberdade para criar campanhas que atraem e engajam."
+                      widthImg={200}
+                      heightImg={180}
+                    />
+                  </li>
+                  <li>
+                    <HowWork
+                      image="/images/sino.png"
+                      title="Recebemos o pedido..."
+                      text="Assim que você consegue uma venda, nós entramos em ação. Nossa equipe recebe o pedido e cuida de todos os detalhes. Você não precisa se preocupar com estoque, processamento de pedidos ou logística."
+                      widthImg={150}
+                      heightImg={160}
+                    />
+                  </li>
+                  <li>
+                    <HowWork
+                      image="/images/box.png"
+                      title="Fornecedores Enviam!"
+                      text="Uma vez que o pedido é recebido, os fornecedores se encarregam da logistica. Preparamos, embalamos e enviamos o produto diretamente para o cliente. Rápido, eficiente e sem complicações. Você não precisa se preocupar com nenhuma etapa da entrega."
+                      widthImg={200}
+                      heightImg={180}
+                    />
+                  </li>
                 </ul>
               </div>
               <Image 
@@ -131,13 +150,14 @@ export default function Home() {
                 height={300}
               />
             </div>
-            <div className="bg-[#9B2FE9] pt-60 pb-10 text-white">
+            <div className="bg-[#9B2FE9] pt-40 pb-10 text-white">
               <div className="flex flex-col items-center">
                 <Image
                   src="/images/money1.png"
                   alt="Ilustração de duas cédulas de dinheiro"
                   width={150}
                   height={150}
+                  className="moneyShadow mb-[-40px]"
                 />
                 <h2 className="font-bold text-4xl tracking-tighter my-7">
                   Abra as portas do seu futuro
@@ -151,7 +171,7 @@ export default function Home() {
                   </p>
                 </div>
                 <Button
-                  className="rounded-full bg-[#f51357] w-96 py-3 my-8 text-white font-bold"
+                  className="rounded-full bg-[#f51357] w-96 py-3 my-8 text-white font-bold shadow-2xl transition-all hover:bg-[#da0b49] duration-200"
                 >
                   Alcance o Sucesso!
                 </Button>

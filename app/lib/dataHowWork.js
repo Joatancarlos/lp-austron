@@ -1,4 +1,4 @@
-export const dataWork = [
+export const dataHowWork = [
   {
     image: '/images/box.png',
     title: 'Você vende...',

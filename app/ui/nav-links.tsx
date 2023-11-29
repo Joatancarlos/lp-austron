@@ -7,19 +7,35 @@ export default function NavLinks() {
       <ul className="flex w-80 justify-between">
         <li>
           <Link
-            href="/">Início</Link>
+            href="/"
+            className="hover:font-semibold hover:text-white"
+          >
+            Início
+          </Link>
         </li>
         <li>
           <Link
-            href="/">Sobre</Link>
+            href="/"
+            className="hover:font-semibold hover:text-white"
+          >
+            Sobre
+          </Link>
         </li>
         <li>
           <Link
-            href="/">Business</Link>
+            href="/"
+            className="hover:font-semibold hover:text-white"
+          >
+            Business
+          </Link>
         </li>
         <li>
           <Link
-            href="/">Contato</Link>
+            href="/"
+            className="hover:font-semibold hover:text-white"
+          >
+            Contato
+          </Link>
         </li>
       </ul>
     </nav>
