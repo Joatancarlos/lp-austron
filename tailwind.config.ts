@@ -19,6 +19,7 @@ const config: Config = {
         '-2': '-2px',
         'top-negative': '-60px',
         'bottom-negative': '-40px',
+        'womanImg': '-230px',
       },
       backgroundImage: {
         'blob1': "url(/images/blob2.svg)",

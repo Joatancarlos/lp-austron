@@ -70,20 +70,24 @@ export default function Home() {
           <Rocket />
         </section>
         {/* Transforme */}
-        <section className="flex justify-around items-center">
+        <section className="relative md:static flex justify-around items-center">
           <Image 
             src="/images/5224471.png"
             alt="Ilustração de uma pessoa com um notebook"
             width={600}
             height={600}
-            className="bg-[url(/images/blob1.svg)] bg-[length:80%] bg-center bg-no-repeat "
+            className="bg-[url(/images/blob1.svg)] bg-[length:80%] bg-center bg-no-repeat ml-[-230px] md:ml-0"
           />
-          <div className="w-64 ">
+          <div className="absolute top-10 right-0 md:static w-72 md:w-64 text-end md:text-start">
             <span className="text-[#9B2FE9] font-bold text-3xl">
               {"// transforme"}
               </span>
-            <p className="font-bold text-6xl tracking-tighter leading-[4.5rem] capitalize mb-4">
-              Clique em Conquistas.
+            <p className="font-bold text-5xl md:text-6xl tracking-tighter leading-[4.5rem] capitalize my-4">
+              Cliques 
+              <span className="block md:my-2">
+                em
+              </span>
+              Conquistas.
             </p>
           </div>
         </section>
