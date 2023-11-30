@@ -32,7 +32,7 @@ body {
   color: white;
 }
 
-.animationRocket {
+/* .animationRocket {
   animation: rocket 1s ease-in-out infinite alternate;
 }
 
@@ -43,7 +43,7 @@ body {
   to {
     transform: translateY(-20px);
   }
-}
+} */
 
 /* .blob1-bg {
   background: url("/images/blob2.svg") no-repeat;

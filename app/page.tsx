@@ -58,12 +58,12 @@ export default function Home() {
           </ul>
         </section>
         {/* Oportunidade para o sucesso */}
-        <section className="flex justify-around mb-20 items-center">
-          <div className="w-full md:w-96">
+        <section className="relative md:static flex justify-around mb-20 items-center">
+          <div className="z-50 md:z-0 w-full md:w-96">
             <h2 className="text-center md:text-left font-bold text-4xl capitalize">
               sua oportunidade para o sucesso;
             </h2>
-            <p className="text-xl md:text-base text-center my-10">
+            <p className="text-xl md:text-base text-center md:text-start my-10">
               Criamos a ponte definitiva entre vendedores visionários e fornecedores de elite. Austron é mais que uma plataforma - é o caminho acelerado para lucros extraordinários e conquista de mercado. Entre para o jogo dos grandes. Austron é onde ambição encontra oportunidade.
             </p>
           </div>

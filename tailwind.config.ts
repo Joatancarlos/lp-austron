@@ -28,6 +28,19 @@ const config: Config = {
       },
       backgroundPosition: {
         'right-top': '-155px -10%',
+      },
+      animation: {
+        'rocket': 'rocket 1s ease-in-out infinite alternate',
+      },
+      keyframes: {
+        rocket: {
+          '0%': { transform: 'translateY(0)' },
+          '100%': { transform: 'translateY(-20px)' },
+        }
+      },
+      spacing: {
+        'rightRocket': '-90px',
+        'topRocket': '-20px',
       }
     },
   },
