@@ -13,22 +13,22 @@ import Rocket from "./ui/rocket";
 export default function Home() {
   return (
     <div className="max-w-screen-xl m-auto bg-[url(/images/blob2.svg)] bg-no-repeat bg-[-155px_-10%] bg-[length:55rem] lg:bg-none">
-      <header className="">
+      <header className="p-6">
         <NavLinks />
       </header>
-      <main className="px-11">
+      <main className="p-6 md:px-11">
         {/* Apresentação */}
         <section className="flex justify-between my-20">
-          <div className="w-[30rem]">
+          <div className="w-full md:w-[30rem]">
             <h1
-              className="font-bold text-6xl tracking-tighter leading-[4.5rem] capitalize mb-4">
+              className="text-center md:text-left font-bold text-5xl tracking-tighter leading-[4.5rem] capitalize">
               desperte seu potencial empreendedor;
             </h1>
-            <p className="font-semibold w-80 mb-4">
+            <p className="text-center text-xl md:text-left font-normal md:font-semibold md:w-80 my-10 md:mt-4">
               Seu negócio, suas regras. Venda online e viva a vida dos seus sonhos. Comece agora com a Austron.
             </p>
             <Button
-              className="rounded-full bg-[#f51357] px-6 py-3 text-white font-bold shadow-xl transition-all hover:bg-[#da0b49] duration-200"
+              className="rounded-full bg-[#f51357] w-full md:w-auto px-6 py-3 text-white font-bold shadow-xl transition-all hover:bg-[#da0b49] duration-200"
             >Alcance o Sucesso!</Button>
           </div>
           <Image
@@ -36,7 +36,7 @@ export default function Home() {
             alt="Ilustrações de um e-commerce"
             width={700}
             height={500}
-            className="mt-[-60px]"
+            className="hidden md:block mt-[-60px]"
           />
         </section>
         {/* O que oferece */}
@@ -59,11 +59,11 @@ export default function Home() {
         </section>
         {/* Oportunidade para o sucesso */}
         <section className="flex justify-around mb-20 items-center">
-          <div className="w-96">
-            <h2 className="font-semibold text-4xl capitalize mb-3">
+          <div className="w-full md:w-96">
+            <h2 className="text-center md:text-left font-bold text-4xl capitalize">
               sua oportunidade para o sucesso;
             </h2>
-            <p className="text-center">
+            <p className="text-xl md:text-base text-center my-10">
               Criamos a ponte definitiva entre vendedores visionários e fornecedores de elite. Austron é mais que uma plataforma - é o caminho acelerado para lucros extraordinários e conquista de mercado. Entre para o jogo dos grandes. Austron é onde ambição encontra oportunidade.
             </p>
           </div>

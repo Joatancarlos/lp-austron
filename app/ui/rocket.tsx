@@ -2,11 +2,10 @@
 
 import Image from 'next/image';
 import React from 'react'
-import { motion } from "framer-motion";
 
 export default function Rocket() {
   return (
-    <motion.div>
+    <div className="hidden md:block">
       <Image
           src="/images/foguete.png"
           alt="Ilustração de um foguete decolando"
@@ -14,6 +13,6 @@ export default function Rocket() {
           height={350}
           className="animationRocket"
           />
-    </motion.div>
+    </div>
   )
 }
