@@ -13,10 +13,10 @@ import Rocket from "./ui/rocket";
 export default function Home() {
   return (
     <div className="max-w-screen-xl m-auto bg-[url(/images/blob2.svg)] bg-no-repeat bg-[-155px_-10%] bg-[length:55rem] lg:bg-none">
-      <header className="p-6">
+      <header className="px-6 md:px-11">
         <NavLinks />
       </header>
-      <main className="p-6 md:px-11">
+      <main className="px-6 md:px-11">
         {/* Apresentação */}
         <section className="flex justify-between my-20">
           <div className="w-full md:w-[30rem]">
@@ -103,7 +103,13 @@ export default function Home() {
           </div>
           <div className="mt-48">
             <div className="relative">
-              <div className="absolute top-[-60px] w-full px-10">
+              <Image 
+                src="/images/wave.svg"
+                alt="figura com efeito de onda na cor lilás"
+                width={1200}
+                height={300}
+              />
+              <div className="md:absolute bg-[#9B2FE9] md:bg-inherit mt-[-60px] md:mt-0 top-[-60px] w-full px-10">
                 <ul className="flex flex-wrap justify-between text-white">
                   <li>
                     <HowWork
@@ -134,14 +140,8 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <Image 
-                src="/images/wave.svg"
-                alt="figura com efeito de onda na cor lilás"
-                width={1200}
-                height={300}
-              />
             </div>
-            <div className="bg-[#9B2FE9] pt-40 pb-10 text-white">
+            <div className="bg-[#9B2FE9] pt-20 md:pt-40 pb-10 text-white">
               <div className="flex flex-col items-center">
                 <Image
                   src="/images/money1.png"
@@ -150,14 +150,14 @@ export default function Home() {
                   height={150}
                   className="moneyShadow mb-[-40px]"
                 />
-                <h2 className="font-bold text-4xl tracking-tighter my-7">
+                <h2 className="font-bold text-3xl md:text-4xl tracking-tighter my-7">
                   Abra as portas do seu futuro
                 </h2>
-                <div className="flex justify-between w-2/3 m-auto">
-                  <p className="w-1/3">
+                <div className="flex flex-wrap md:flex-nowrap justify-between md:w-2/3 m-auto px-6 md:p-0">
+                  <p className="text-center md:text-start md:w-1/3 pb-8 md:pb-0">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis sit magnam omnis inventore perferendis amet eum dicta praesentium impedit doloremque maxime minus facere excepturi vitae molestias ad optio, dignissimos fugit!
                   </p>
-                  <p className="text-end w-1/3">
+                  <p className="text-center md:text-end md:w-1/3">
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi quasi dolorem corporis, magnam voluptatibus vero, cum, reiciendis earum labore eaque facere porro atque illum minus. Beatae quae consequatur deleniti necessitatibus?
                   </p>
                 </div>

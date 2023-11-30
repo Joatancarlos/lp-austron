@@ -18,7 +18,7 @@ export default function NavLinks() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   return (
     <>
-      <nav className="flex items-center justify-between lg:px-8" aria-label="Global">
+      <nav className="flex items-center justify-between" aria-label="Global">
         
         <Logo />
         {/* Mobile */}

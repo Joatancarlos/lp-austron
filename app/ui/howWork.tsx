@@ -19,7 +19,7 @@ export default function HowWork({
     heightImg
   }: Props) {
   return (
-    <div className=" flex flex-col justify-center items-center w-72 relative">
+    <div className=" flex flex-col justify-center items-center w-full md:w-72 relative">
       <div className='flex items-center h-56 '>
         <Image
           src={image}
