@@ -78,7 +78,7 @@ export default function Home() {
             height={600}
             className="bg-[url(/images/blob1.svg)] bg-[length:80%] bg-center bg-no-repeat "
           />
-          <div className="w-64">
+          <div className="w-64 ">
             <span className="text-[#9B2FE9] font-bold text-3xl">
               {"// transforme"}
               </span>
